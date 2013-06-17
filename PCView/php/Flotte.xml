@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Flotte SYSTEM "Flotte.dtd">
+<Flotte>
+	<PC id="patate">
+		<Id>
+			<Nom>PC Patate</Nom>
+			<Modele>Macbook pro retina</Modele>
+		</Id>
+		<Config>
+			<Stockages>
+				<Stockage Nom="disk0s0">
+					<Support Nom="SSD" />
+					<Connectique Nom="SATA" />
+					<Capacite Unite="Go">250</Capacite>
+				</Stockage>
+			</Stockages>
+
+			<Interfaces>
+				<Interface Nom="eth0">
+					<TYPE>Ethernet</TYPE>
+					<Adresse>
+						<MAC>11:22:33:44:55:66</MAC>
+						<IPV4>192.168.0.145</IPV4>
+						<SUBNET>255.255.255.0</SUBNET>
+						<GATEWAY>192.168.0.1</GATEWAY>
+					</Adresse>
+				</Interface>
+			</Interfaces>
+			<Peripheriques >
+				<Peripherique Nom="clavier">
+					<Connectique Nom="USB" />
+					<TYPE>péripherique d'entrée avec plein de touches</TYPE>
+				</Peripherique>
+				<Peripherique Nom="imprimante">
+					<Connectique Nom="LPT" />
+					<TYPE>Une printeuse </TYPE>
+				</Peripherique>
+			</Peripheriques>
+			<CPU Nom="i7">
+				<Freq Unite="GHz">3.4</Freq>
+				<Cache Niveau="lvl1">
+					<Capacite Unite="Mo">2</Capacite>
+				</Cache>
+				<NbCore>4</NbCore>
+			  <Arch Nom="x64"/>
+			</CPU>
+			<CM>
+				<Chipset>Z77</Chipset>
+				<Socket>1155</Socket>
+			</CM>
+			<RAM> 
+			<Freq Unite="GHz">1.6</Freq>
+				<Capacite Unite="Go">8</Capacite>
+				<TYPE>DDR4</TYPE>
+			</RAM>
+			<GPU Nom="GT640">
+				<Freq Unite="MHz">650</Freq>
+				<RAM>
+					<Freq Unite="GHz">1</Freq>
+					<Capacite Unite="Go">2</Capacite>
+					<TYPE>GDDR5</TYPE>
+				</RAM>
+				<Connectique Nom="HDMI" /> 
+			</GPU>
+			<BIOS Version="2.0" Nom="EFI" />
+		</Config>
+		<Softwares>
+			<OS Nom="OSX">
+				<Arch Nom="x64" />
+			</OS>
+			<Software Version="1" Nom="Minecraft">
+				<Arch Nom="x86" />
+			</Software>
+		</Softwares>
+	</PC>
+	<PC id="albert">
+		<Id>
+			<Nom>PC albert</Nom>
+			<Modele>Macbook pro retina</Modele>
+		</Id>
+		<Config>
+			<Stockages>
+				<Stockage Nom="disk0s0">
+					<Support Nom="HDD" />
+					<Connectique Nom="SATA" />
+					<Capacite Unite="To">1</Capacite>
+				</Stockage>
+				<Stockage Nom="disk1s0">
+					<Support Nom="SSD" />
+					<Connectique Nom="SATA" />
+					<Capacite Unite="Go">250</Capacite>
+				</Stockage>
+			</Stockages>
+
+			<Interfaces>
+				<Interface Nom="en1">
+					<TYPE>Ethernet</TYPE>
+					<Adresse>
+						<MAC>11:22:33:44:55:66</MAC>
+						<IPV4>192.168.0.254</IPV4>
+						<SUBNET>255.255.255.0</SUBNET>
+						<GATEWAY>192.168.0.1</GATEWAY>
+					</Adresse>
+				</Interface>
+			</Interfaces>
+			<Peripheriques >
+				<Peripherique Nom="clavier">
+					<Connectique Nom="USB" />
+					<TYPE>péripherique d'entrée avec plein de touches</TYPE>
+				</Peripherique>
+				<Peripherique Nom="imprimante">
+					<Connectique Nom="LPT" />
+					<TYPE>WIZIWIG!!</TYPE>
+				</Peripherique>
+			</Peripheriques>
+			<CPU Nom="i7">
+				<Freq Unite="GHz">3.4</Freq>
+				<Cache Niveau="lvl1">
+					<Capacite Unite="Mo">2</Capacite>
+				</Cache>
+				
+				<NbCore>4</NbCore>
+			  <Arch Nom="x64"/>
+			</CPU>
+			<CM>
+				<Chipset>Z77</Chipset>
+				<Socket>1155</Socket>
+			</CM>
+			<RAM> 
+			<Freq Unite="GHz">1.6</Freq>
+				<Capacite Unite="Go">8</Capacite>
+				<TYPE>DDR4</TYPE>
+			</RAM>
+			<GPU Nom="HD7970">
+				<Freq Unite="MHz">650</Freq>
+				<RAM>
+					<Freq Unite="GHz">1</Freq>
+					<Capacite Unite="Go">2</Capacite>
+					<TYPE>GDDR5</TYPE>
+				</RAM>
+				<Connectique Nom="HDMI" /> 
+			</GPU>
+			<BIOS Version="3.0" Nom="EFI" />
+		</Config>
+		<Softwares>
+			<OS Nom="OSX">
+				<Arch Nom="x64" />
+			</OS>
+			<Software Version="1" Nom="Minecraft">
+				<Arch Nom="x86" />
+			</Software>
+		</Softwares>
+	</PC>
+	<PC id="joseph">
+		<Id>
+			<Nom>Joseph</Nom>
+			<Modele>perso</Modele>
+		</Id>
+		<Config>
+			<Stockages>
+				<Stockage Nom="disk0s0">
+					<Support Nom="HDD" />
+					<Connectique Nom="SATA" />
+					<Capacite Unite="To">1</Capacite>
+				</Stockage>
+				<Stockage Nom="disk1s0">
+					<Support Nom="SSD" />
+					<Connectique Nom="SATA" />
+					<Capacite Unite="Go">80</Capacite>
+				</Stockage>
+			</Stockages>
+
+			<Interfaces>
+				<Interface Nom="eth0">
+					<TYPE>Ethernet</TYPE>
+					<Adresse>
+						<MAC>11:22:33:44:55:66</MAC>
+						<IPV4>192.168.0.254</IPV4>
+						<SUBNET>255.255.255.0</SUBNET>
+						<GATEWAY>192.168.0.1</GATEWAY>
+					</Adresse>
+				</Interface>
+				<Interface Nom="eth1">
+					<TYPE>Ethernet</TYPE>
+					<Adresse>
+						<MAC>11:22:33:44:55:77</MAC>
+						<IPV4>192.168.0.22</IPV4>
+						<SUBNET>255.255.255.0</SUBNET>
+						<GATEWAY>192.168.0.1</GATEWAY>
+					</Adresse>
+				</Interface>
+			</Interfaces>
+			<Peripheriques >
+				<Peripherique Nom="clavier">
+					<Connectique Nom="USB" />
+					<TYPE>péripherique d'entrée avec plein de touches</TYPE>
+				</Peripherique>
+				<Peripherique Nom="souris">
+					<Connectique Nom="USB" />
+					<TYPE>ne pas lui donner de fromage</TYPE>
+				</Peripherique>
+				<Peripherique Nom="imprimante">
+					<Connectique Nom="LPT" />
+					<TYPE>WIZIWIG!!</TYPE>
+				</Peripherique>
+			</Peripheriques>
+			<CPU Nom="Xeon">
+				<Freq Unite="GHz">2</Freq>
+				<Cache Niveau="lvl1">
+					<Capacite Unite="Mo">24</Capacite>
+				</Cache>
+						<Cache Niveau="lvl2">
+					<Capacite Unite="Mo">30</Capacite>
+				</Cache>
+				<NbCore>10</NbCore>
+			  <Arch Nom="x64"/>
+			</CPU>
+			<CM>
+				<Chipset>Z77</Chipset>
+				<Socket>1155</Socket>
+			</CM>
+			<RAM> 
+			<Freq Unite="GHz">1.6</Freq>
+				<Capacite Unite="Go">8</Capacite>
+				<TYPE>DDR4</TYPE>
+			</RAM>
+			<GPU Nom="HD7970">
+				<Freq Unite="MHz">650</Freq>
+				<RAM>
+					<Freq Unite="GHz">1</Freq>
+					<Capacite Unite="Go">2</Capacite>
+					<TYPE>GDDR5</TYPE>
+				</RAM>
+				<Connectique Nom="HDMI" /> 
+			</GPU>
+			<BIOS Version="3.0" Nom="EFI" />
+		</Config>
+		<Softwares>
+			<OS Nom="OSX">
+				<Arch Nom="x64" />
+			</OS>
+			<Software Version="1" Nom="Minecraft">
+				<Arch Nom="x86" />
+			</Software>
+		</Softwares>
+	</PC>
+	<PC id="boris">
+		<Id>
+			<Nom>Boris Grishenko</Nom>
+			<Modele>hacker mitm</Modele>
+		</Id>
+		<Config>
+			<Stockages>
+				<Stockage Nom="disk0s0">
+					<Support Nom="HDD" />
+					<Connectique Nom="SATA" />
+					<Capacite Unite="To">1</Capacite>
+				</Stockage>
+				<Stockage Nom="disk1s0">
+					<Support Nom="SSD" />
+					<Connectique Nom="SATA" />
+					<Capacite Unite="Go">80</Capacite>
+				</Stockage>
+			</Stockages>
+
+			<Interfaces>
+				<Interface Nom="eth0">
+					<TYPE>Ethernet</TYPE>
+					<Adresse>
+						<MAC>11:22:33:44:55:66</MAC>
+						<IPV4>192.168.0.254</IPV4>
+						<SUBNET>255.255.255.0</SUBNET>
+						<GATEWAY>192.168.0.1</GATEWAY>
+					</Adresse>
+				</Interface>
+				<Interface Nom="eth1">
+					<TYPE>Ethernet</TYPE>
+					<Adresse>
+						<MAC>11:22:33:44:55:77</MAC>
+						<IPV4>192.168.0.22</IPV4>
+						<SUBNET>255.255.255.0</SUBNET>
+						<GATEWAY>192.168.0.1</GATEWAY>
+					</Adresse>
+				</Interface>
+			</Interfaces>
+			<Peripheriques >
+				<Peripherique Nom="clavier">
+					<Connectique Nom="USB" />
+					<TYPE>péripherique d'entrée avec plein de touches</TYPE>
+				</Peripherique>
+				<Peripherique Nom="souris">
+					<Connectique Nom="BLUETOOTH" />
+					<TYPE>espece de petit rat</TYPE>
+				</Peripherique>
+				<Peripherique Nom="imprimante">
+					<Connectique Nom="LPT" />
+					<TYPE>print me a sheep</TYPE>
+				</Peripherique>
+			</Peripheriques>
+			<CPU Nom="i7">
+				<Freq Unite="GHz">3.4</Freq>
+				<Cache Niveau="lvl1">
+					<Capacite Unite="Mo">2</Capacite>
+				</Cache>
+				
+				<NbCore>4</NbCore>
+			  <Arch Nom="x64"/>
+			</CPU>
+			<CM>
+				<Chipset>Z77</Chipset>
+				<Socket>1155</Socket>
+			</CM>
+			<RAM> 
+			<Freq Unite="GHz">1.6</Freq>
+				<Capacite Unite="Go">8</Capacite>
+				<TYPE>DDR4</TYPE>
+			</RAM>
+			<GPU Nom="HD7970">
+				<Freq Unite="MHz">650</Freq>
+				<RAM>
+					<Freq Unite="GHz">1</Freq>
+					<Capacite Unite="Go">2</Capacite>
+					<TYPE>GDDR5</TYPE>
+				</RAM>
+				<Connectique Nom="HDMI" /> 
+			</GPU>
+			<BIOS Version="3.0" Nom="EFI" />
+		</Config>
+		<Softwares>
+			<OS Nom="OSX">
+				<Arch Nom="x64" />
+			</OS>
+			<Software Version="1" Nom="Minecraft">
+				<Arch Nom="x86" />
+			</Software>
+		</Softwares>
+	</PC>
+	<PC id="Audrey">
+		<Id>
+			<Nom>PC audrey</Nom>
+			<Modele>Macbook pro retina</Modele>
+		</Id>
+		<Config>
+			<Stockages>
+				<Stockage Nom="disk0s0">
+					<Support Nom="SSD" />
+					<Connectique Nom="SATA" />
+					<Capacite Unite="Go">250</Capacite>
+				</Stockage>
+			</Stockages>
+
+			<Interfaces>
+				<Interface Nom="eth0">
+					<TYPE>Ethernet</TYPE>
+					<Adresse>
+						<MAC>11:22:33:44:55:66</MAC>
+						<IPV4>192.168.0.145</IPV4>
+						<SUBNET>255.255.255.0</SUBNET>
+						<GATEWAY>192.168.0.1</GATEWAY>
+					</Adresse>
+				</Interface>
+			</Interfaces>
+			<Peripheriques >
+				<Peripherique Nom="clavier">
+					<Connectique Nom="USB" />
+					<TYPE>péripherique d'entrée avec plein de touches</TYPE>
+				</Peripherique>
+				<Peripherique Nom="imprimante">
+					<Connectique Nom="LPT" />
+					<TYPE>Une printeuse </TYPE>
+				</Peripherique>
+			</Peripheriques>
+			<CPU Nom="i7">
+				<Freq Unite="GHz">3.4</Freq>
+				<Cache Niveau="lvl1">
+					<Capacite Unite="Mo">2</Capacite>
+				</Cache>
+				<NbCore>4</NbCore>
+			  <Arch Nom="x64"/>
+			</CPU>
+			<CM>
+				<Chipset>Z77</Chipset>
+				<Socket>1155</Socket>
+			</CM>
+			<RAM> 
+			<Freq Unite="GHz">1.6</Freq>
+				<Capacite Unite="Go">8</Capacite>
+				<TYPE>DDR4</TYPE>
+			</RAM>
+			<GPU Nom="GT640">
+				<Freq Unite="MHz">650</Freq>
+				<RAM>
+					<Freq Unite="GHz">1</Freq>
+					<Capacite Unite="Go">2</Capacite>
+					<TYPE>GDDR5</TYPE>
+				</RAM>
+				<Connectique Nom="HDMI" /> 
+			</GPU>
+			<BIOS Version="2.0" Nom="EFI" />
+		</Config>
+		<Softwares>
+			<OS Nom="OSX">
+				<Arch Nom="x64" />
+			</OS>
+			<Software Version="1" Nom="Minecraft">
+				<Arch Nom="x86" />
+			</Software>
+		</Softwares>
+	</PC>
+	<PC id="joelle">
+		<Id>
+			<Nom>PC joelle</Nom>
+			<Modele>Macbook pro retina</Modele>
+		</Id>
+		<Config>
+			<Stockages>
+				<Stockage Nom="disk0s0">
+					<Support Nom="HDD" />
+					<Connectique Nom="SATA" />
+					<Capacite Unite="To">1</Capacite>
+				</Stockage>
+				<Stockage Nom="disk1s0">
+					<Support Nom="SSD" />
+					<Connectique Nom="SATA" />
+					<Capacite Unite="Go">250</Capacite>
+				</Stockage>
+			</Stockages>
+
+			<Interfaces>
+				<Interface Nom="en1">
+					<TYPE>Ethernet</TYPE>
+					<Adresse>
+						<MAC>11:22:33:44:55:66</MAC>
+						<IPV4>192.168.0.254</IPV4>
+						<SUBNET>255.255.255.0</SUBNET>
+						<GATEWAY>192.168.0.1</GATEWAY>
+					</Adresse>
+				</Interface>
+			</Interfaces>
+			<Peripheriques >
+				<Peripherique Nom="clavier">
+					<Connectique Nom="USB" />
+					<TYPE>péripherique d'entrée avec plein de touches</TYPE>
+				</Peripherique>
+				<Peripherique Nom="imprimante">
+					<Connectique Nom="LPT" />
+					<TYPE>WIZIWIG!!</TYPE>
+				</Peripherique>
+			</Peripheriques>
+			<CPU Nom="i7">
+				<Freq Unite="GHz">3.4</Freq>
+				<Cache Niveau="lvl1">
+					<Capacite Unite="Mo">2</Capacite>
+				</Cache>
+				
+				<NbCore>4</NbCore>
+			  <Arch Nom="x64"/>
+			</CPU>
+			<CM>
+				<Chipset>Z77</Chipset>
+				<Socket>1155</Socket>
+			</CM>
+			<RAM> 
+			<Freq Unite="GHz">1.6</Freq>
+				<Capacite Unite="Go">8</Capacite>
+				<TYPE>DDR4</TYPE>
+			</RAM>
+			<GPU Nom="HD7970">
+				<Freq Unite="MHz">650</Freq>
+				<RAM>
+					<Freq Unite="GHz">1</Freq>
+					<Capacite Unite="Go">2</Capacite>
+					<TYPE>GDDR5</TYPE>
+				</RAM>
+				<Connectique Nom="HDMI" /> 
+			</GPU>
+			<BIOS Version="3.0" Nom="EFI" />
+		</Config>
+		<Softwares>
+			<OS Nom="OSX">
+				<Arch Nom="x64" />
+			</OS>
+			<Software Version="1" Nom="Minecraft">
+				<Arch Nom="x86" />
+			</Software>
+		</Softwares>
+	</PC>
+	<PC id="david">
+		<Id>
+			<Nom>PC david</Nom>
+			<Modele>PC perso</Modele>
+		</Id>
+		<Config>
+			<Stockages>
+				<Stockage Nom="disk0s0">
+					<Support Nom="HDD" />
+					<Connectique Nom="SATA" />
+					<Capacite Unite="To">1</Capacite>
+				</Stockage>
+				<Stockage Nom="disk1s0">
+					<Support Nom="SSD" />
+					<Connectique Nom="SATA" />
+					<Capacite Unite="Go">80</Capacite>
+				</Stockage>
+			</Stockages>
+
+			<Interfaces>
+				<Interface Nom="eth0">
+					<TYPE>Ethernet</TYPE>
+					<Adresse>
+						<MAC>11:22:33:44:55:66</MAC>
+						<IPV4>192.168.0.254</IPV4>
+						<SUBNET>255.255.255.0</SUBNET>
+						<GATEWAY>192.168.0.1</GATEWAY>
+					</Adresse>
+				</Interface>
+				<Interface Nom="eth1">
+					<TYPE>Ethernet</TYPE>
+					<Adresse>
+						<MAC>11:22:33:44:55:77</MAC>
+						<IPV4>192.168.0.22</IPV4>
+						<SUBNET>255.255.255.0</SUBNET>
+						<GATEWAY>192.168.0.1</GATEWAY>
+					</Adresse>
+				</Interface>
+			</Interfaces>
+			<Peripheriques >
+				<Peripherique Nom="clavier">
+					<Connectique Nom="USB" />
+					<TYPE>péripherique d'entrée avec plein de touches</TYPE>
+				</Peripherique>
+				<Peripherique Nom="souris">
+					<Connectique Nom="USB" />
+					<TYPE>ne pas lui donner de fromage</TYPE>
+				</Peripherique>
+				<Peripherique Nom="imprimante">
+					<Connectique Nom="LPT" />
+					<TYPE>WIZIWIG!!</TYPE>
+				</Peripherique>
+			</Peripheriques>
+			<CPU Nom="Xeon">
+				<Freq Unite="GHz">2</Freq>
+				<Cache Niveau="lvl1">
+					<Capacite Unite="Mo">24</Capacite>
+				</Cache>
+						<Cache Niveau="lvl2">
+					<Capacite Unite="Mo">30</Capacite>
+				</Cache>
+				<NbCore>10</NbCore>
+			  <Arch Nom="x64"/>
+			</CPU>
+			<CM>
+				<Chipset>Z77</Chipset>
+				<Socket>1155</Socket>
+			</CM>
+			<RAM> 
+			<Freq Unite="GHz">1.6</Freq>
+				<Capacite Unite="Go">8</Capacite>
+				<TYPE>DDR4</TYPE>
+			</RAM>
+			<GPU Nom="HD7970">
+				<Freq Unite="MHz">650</Freq>
+				<RAM>
+					<Freq Unite="GHz">1</Freq>
+					<Capacite Unite="Go">2</Capacite>
+					<TYPE>GDDR5</TYPE>
+				</RAM>
+				<Connectique Nom="HDMI" /> 
+			</GPU>
+			<BIOS Version="3.0" Nom="EFI" />
+		</Config>
+		<Softwares>
+			<OS Nom="OSX">
+				<Arch Nom="x64" />
+			</OS>
+			<Software Version="1" Nom="Minecraft">
+				<Arch Nom="x86" />
+			</Software>
+		</Softwares>
+	</PC>
+	<PC id="pierre">
+		<Id>
+			<Nom>PC pierre</Nom>
+			<Modele>PC hacker mitm</Modele>
+		</Id>
+		<Config>
+			<Stockages>
+				<Stockage Nom="disk0s0">
+					<Support Nom="HDD" />
+					<Connectique Nom="SATA" />
+					<Capacite Unite="To">1</Capacite>
+				</Stockage>
+				<Stockage Nom="disk1s0">
+					<Support Nom="SSD" />
+					<Connectique Nom="SATA" />
+					<Capacite Unite="Go">80</Capacite>
+				</Stockage>
+			</Stockages>
+
+			<Interfaces>
+				<Interface Nom="eth0">
+					<TYPE>Ethernet</TYPE>
+					<Adresse>
+						<MAC>11:22:33:44:55:66</MAC>
+						<IPV4>192.168.0.254</IPV4>
+						<SUBNET>255.255.255.0</SUBNET>
+						<GATEWAY>192.168.0.1</GATEWAY>
+					</Adresse>
+				</Interface>
+				<Interface Nom="eth1">
+					<TYPE>Ethernet</TYPE>
+					<Adresse>
+						<MAC>11:22:33:44:55:77</MAC>
+						<IPV4>192.168.0.22</IPV4>
+						<SUBNET>255.255.255.0</SUBNET>
+						<GATEWAY>192.168.0.1</GATEWAY>
+					</Adresse>
+				</Interface>
+			</Interfaces>
+			<Peripheriques >
+				<Peripherique Nom="clavier">
+					<Connectique Nom="USB" />
+					<TYPE>péripherique d'entrée avec plein de touches</TYPE>
+				</Peripherique>
+				<Peripherique Nom="souris">
+					<Connectique Nom="BLUETOOTH" />
+					<TYPE>espece de petit rat</TYPE>
+				</Peripherique>
+				<Peripherique Nom="imprimante">
+					<Connectique Nom="LPT" />
+					<TYPE>print me a sheep</TYPE>
+				</Peripherique>
+			</Peripheriques>
+			<CPU Nom="i7">
+				<Freq Unite="GHz">3.4</Freq>
+				<Cache Niveau="lvl1">
+					<Capacite Unite="Mo">2</Capacite>
+				</Cache>
+				
+				<NbCore>4</NbCore>
+			  <Arch Nom="x64"/>
+			</CPU>
+			<CM>
+				<Chipset>Z77</Chipset>
+				<Socket>1155</Socket>
+			</CM>
+			<RAM> 
+			<Freq Unite="GHz">1.6</Freq>
+				<Capacite Unite="Go">8</Capacite>
+				<TYPE>DDR4</TYPE>
+			</RAM>
+			<GPU Nom="HD7970">
+				<Freq Unite="MHz">650</Freq>
+				<RAM>
+					<Freq Unite="GHz">1</Freq>
+					<Capacite Unite="Go">2</Capacite>
+					<TYPE>GDDR5</TYPE>
+				</RAM>
+				<Connectique Nom="HDMI" /> 
+			</GPU>
+			<BIOS Version="3.0" Nom="EFI" />
+		</Config>
+		<Softwares>
+			<OS Nom="OSX">
+				<Arch Nom="x64" />
+			</OS>
+			<Software Version="1" Nom="Minecraft">
+				<Arch Nom="x86" />
+			</Software>
+		</Softwares>
+	</PC>
+	<PC id="Robert">
+		<Id>
+			<Nom>PC robert</Nom>
+			<Modele>PC hacker mitm</Modele>
+		</Id>
+		<Config>
+			<Stockages>
+				<Stockage Nom="disk0s0">
+					<Support Nom="HDD" />
+					<Connectique Nom="SATA" />
+					<Capacite Unite="To">1</Capacite>
+				</Stockage>
+				<Stockage Nom="disk1s0">
+					<Support Nom="SSD" />
+					<Connectique Nom="SATA" />
+					<Capacite Unite="Go">80</Capacite>
+				</Stockage>
+			</Stockages>
+
+			<Interfaces>
+				<Interface Nom="eth0">
+					<TYPE>Ethernet</TYPE>
+					<Adresse>
+						<MAC>11:22:33:44:55:66</MAC>
+						<IPV4>192.168.0.254</IPV4>
+						<SUBNET>255.255.255.0</SUBNET>
+						<GATEWAY>192.168.0.1</GATEWAY>
+					</Adresse>
+				</Interface>
+				<Interface Nom="eth1">
+					<TYPE>Ethernet</TYPE>
+					<Adresse>
+						<MAC>11:22:33:44:55:77</MAC>
+						<IPV4>192.168.0.22</IPV4>
+						<SUBNET>255.255.255.0</SUBNET>
+						<GATEWAY>192.168.0.1</GATEWAY>
+					</Adresse>
+				</Interface>
+			</Interfaces>
+			<Peripheriques >
+				<Peripherique Nom="clavier">
+					<Connectique Nom="USB" />
+					<TYPE>péripherique d'entrée avec plein de touches</TYPE>
+				</Peripherique>
+				<Peripherique Nom="souris">
+					<Connectique Nom="BLUETOOTH" />
+					<TYPE>espece de petit rat</TYPE>
+				</Peripherique>
+				<Peripherique Nom="imprimante">
+					<Connectique Nom="LPT" />
+					<TYPE>print me a sheep</TYPE>
+				</Peripherique>
+			</Peripheriques>
+			<CPU Nom="i7">
+				<Freq Unite="GHz">3.4</Freq>
+				<Cache Niveau="lvl1">
+					<Capacite Unite="Mo">2</Capacite>
+				</Cache>
+				
+				<NbCore>4</NbCore>
+			  <Arch Nom="x64"/>
+			</CPU>
+			<CM>
+				<Chipset>Z77</Chipset>
+				<Socket>1155</Socket>
+			</CM>
+			<RAM> 
+			<Freq Unite="GHz">1.6</Freq>
+				<Capacite Unite="Go">8</Capacite>
+				<TYPE>DDR4</TYPE>
+			</RAM>
+			<GPU Nom="HD7970">
+				<Freq Unite="MHz">650</Freq>
+				<RAM>
+					<Freq Unite="GHz">1</Freq>
+					<Capacite Unite="Go">2</Capacite>
+					<TYPE>GDDR5</TYPE>
+				</RAM>
+				<Connectique Nom="HDMI" /> 
+			</GPU>
+			<BIOS Version="3.0" Nom="EFI" />
+		</Config>
+		<Softwares>
+			<OS Nom="OSX">
+				<Arch Nom="x64" />
+			</OS>
+			<Software Version="1" Nom="Minecraft">
+				<Arch Nom="x86" />
+			</Software>
+		</Softwares>
+	</PC>
+	<PC id="George">
+		<Id>
+			<Nom>PC george</Nom>
+			<Modele>PC hacker mitm</Modele>
+		</Id>
+		<Config>
+			<Stockages>
+				<Stockage Nom="disk0s0">
+					<Support Nom="HDD" />
+					<Connectique Nom="SATA" />
+					<Capacite Unite="To">1</Capacite>
+				</Stockage>
+				<Stockage Nom="disk1s0">
+					<Support Nom="SSD" />
+					<Connectique Nom="SATA" />
+					<Capacite Unite="Go">80</Capacite>
+				</Stockage>
+			</Stockages>
+
+			<Interfaces>
+				<Interface Nom="eth0">
+					<TYPE>Ethernet</TYPE>
+					<Adresse>
+						<MAC>11:22:33:44:55:66</MAC>
+						<IPV4>192.168.0.254</IPV4>
+						<SUBNET>255.255.255.0</SUBNET>
+						<GATEWAY>192.168.0.1</GATEWAY>
+					</Adresse>
+				</Interface>
+				<Interface Nom="eth1">
+					<TYPE>Ethernet</TYPE>
+					<Adresse>
+						<MAC>11:22:33:44:55:77</MAC>
+						<IPV4>192.168.0.22</IPV4>
+						<SUBNET>255.255.255.0</SUBNET>
+						<GATEWAY>192.168.0.1</GATEWAY>
+					</Adresse>
+				</Interface>
+			</Interfaces>
+			<Peripheriques >
+				<Peripherique Nom="clavier">
+					<Connectique Nom="USB" />
+					<TYPE>péripherique d'entrée avec plein de touches</TYPE>
+				</Peripherique>
+				<Peripherique Nom="souris">
+					<Connectique Nom="BLUETOOTH" />
+					<TYPE>espece de petit rat</TYPE>
+				</Peripherique>
+				<Peripherique Nom="imprimante">
+					<Connectique Nom="LPT" />
+					<TYPE>print me a sheep</TYPE>
+				</Peripherique>
+			</Peripheriques>
+			<CPU Nom="i7">
+				<Freq Unite="GHz">3.4</Freq>
+				<Cache Niveau="lvl1">
+					<Capacite Unite="Mo">2</Capacite>
+				</Cache>
+				
+				<NbCore>4</NbCore>
+			  <Arch Nom="x64"/>
+			</CPU>
+			<CM>
+				<Chipset>Z77</Chipset>
+				<Socket>1155</Socket>
+			</CM>
+			<RAM> 
+			<Freq Unite="GHz">1.6</Freq>
+				<Capacite Unite="Go">8</Capacite>
+				<TYPE>DDR4</TYPE>
+			</RAM>
+			<GPU Nom="HD7970">
+				<Freq Unite="MHz">650</Freq>
+				<RAM>
+					<Freq Unite="GHz">1</Freq>
+					<Capacite Unite="Go">2</Capacite>
+					<TYPE>GDDR5</TYPE>
+				</RAM>
+				<Connectique Nom="HDMI" /> 
+			</GPU>
+			<BIOS Version="3.0" Nom="EFI" />
+		</Config>
+		<Softwares>
+			<OS Nom="OSX">
+				<Arch Nom="x64" />
+			</OS>
+			<Software Version="1" Nom="Minecraft">
+				<Arch Nom="x86" />
+			</Software>
+		</Softwares>
+	</PC>
+
+</Flotte>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT Flotte (PC*) >
+
+<!ELEMENT PC (Id,Config,Softwares) >
+<!ATTLIST PC
+	id ID #REQUIRED
+>
+<!ELEMENT Softwares (OS,Software*) >
+<!ELEMENT OS (Arch) >
+<!ATTLIST OS
+	Nom CDATA #REQUIRED
+>
+<!ELEMENT Software (Arch) >
+<!ATTLIST Software
+	Nom CDATA #REQUIRED
+	Version CDATA #REQUIRED
+>
+
+<!ELEMENT Id (Nom,Modele) >
+
+<!ELEMENT Interfaces (Interface+) >
+
+<!ELEMENT Interface (TYPE,Adresse) >
+<!ATTLIST Interface 
+	Nom CDATA #REQUIRED
+>
+<!ELEMENT Adresse (MAC,IPV4,SUBNET,GATEWAY) >
+
+<!ELEMENT Config (Stockages,Interfaces,Peripheriques,CPU,CM,RAM,GPU,BIOS)>
+<!ELEMENT BIOS (#PCDATA) >
+<!ATTLIST BIOS
+	Nom CDATA #REQUIRED
+	Version CDATA #REQUIRED
+>
+
+<!ELEMENT GPU (Freq,RAM?,Connectique+) >
+<!ATTLIST GPU
+	Nom CDATA #REQUIRED
+>
+<!ELEMENT RAM (Freq,Capacite,TYPE) >
+<!ATTLIST RAM 
+	Nom CDATA #IMPLIED 
+>
+<!ELEMENT CM (Chipset,Socket) >
+
+<!ELEMENT CPU (Freq,Cache+,NbCore,Arch) >
+<!ATTLIST CPU
+ Nom CDATA #REQUIRED
+ >
+<!ELEMENT Peripheriques (Peripherique+) >
+ 
+<!ELEMENT Peripherique (Connectique,TYPE) >
+<!ATTLIST Peripherique
+	Nom CDATA #REQUIRED
+>
+
+<!ELEMENT Stockages (Stockage+) >
+
+<!ELEMENT Stockage (Support,Connectique,Capacite) >
+
+
+<!ATTLIST Stockage 
+ Nom CDATA #REQUIRED
+>
+<!ELEMENT Nom (#PCDATA) >
+<!ELEMENT Socket (#PCDATA) >
+<!ELEMENT Chipset (#PCDATA) >
+<!ELEMENT Modele (#PCDATA) >
+<!ELEMENT Freq (#PCDATA) >
+<!ATTLIST Freq 
+	Unite (KHz | MHz | GHz) "GHz"
+>
+<!ELEMENT Cache (Capacite) >
+<!ATTLIST Cache 
+	Niveau ( lvl1 | lvl2 | lvl3 ) "lvl1" 
+>
+<!ELEMENT TYPE (#PCDATA) >
+<!ELEMENT Arch (#PCDATA) >
+<!ATTLIST Arch
+	Nom (x86 | x64 | IA_64) "x86" 
+>
+<!ELEMENT NbCore (#PCDATA) >
+<!ELEMENT Connectique (#PCDATA) >
+<!ATTLIST Connectique 
+	Nom (USB | PS2 | BLUETOOTH | WIFI | LPT | SERIE | FIREWIRE | JACK | HDMI | VGA | DVI | SATA | IDE ) "USB" 
+ >
+<!ELEMENT Support (#PCDATA)>
+<!ATTLIST Support	Nom (SSD | HDD) "HDD" >
+<!ELEMENT Capacite (#PCDATA) >
+<!ATTLIST Capacite 	Unite (Ko | Mo | Go | To | Po) #REQUIRED  >
+<!ELEMENT MAC (#PCDATA) >
+<!ELEMENT IPV4 (#PCDATA) >
+<!ELEMENT SUBNET (#PCDATA) >
+<!ELEMENT GATEWAY (#PCDATA) >
