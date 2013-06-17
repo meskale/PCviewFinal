@@ -1,6 +1,460 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Flotte SYSTEM "Flotte.dtd">
 <Flotte>
+<PC id="id0">
+		<Id>
+			<Nom>Nom du PC1</Nom>
+			<Modele Nom="DELL XPS" />
+		</Id>
+		<Config>
+			<Stockages>
+				<Stockage Nom="Disque Dur C:">
+					<Support Nom="HDD" />
+					<Connectique Nom="SATA" />
+					<Capacite Unite="To">1</Capacite>
+				</Stockage>
+			</Stockages>
+			<Interfaces>
+				<Interface Nom="Carte Wifi">
+					<TYPE>WIFI</TYPE>
+					<Adresse>
+						<MAC>00:00:00:00:00:00</MAC>
+						<IPV4>192.168.1.12</IPV4>
+						<SUBNET>192.168.1.0</SUBNET>
+						<GATEWAY>192.168.1.1</GATEWAY>
+					</Adresse>
+				</Interface>
+				<Interface Nom="Carte Ethernet">
+					<TYPE>Ethernet</TYPE>
+					<Adresse>
+						<MAC>00:00:00:00:00:01</MAC>
+						<IPV4>192.168.1.13</IPV4>
+						<SUBNET>192.168.1.0</SUBNET>
+						<GATEWAY>192.168.1.1</GATEWAY>
+					</Adresse>
+				</Interface>
+			</Interfaces>
+			<Peripheriques>
+				<Peripherique Nom="Ecran">
+					<Connectique Nom="DVI" />
+					<TYPE>23pouces</TYPE>
+				</Peripherique>
+			</Peripheriques>
+			<CPU Nom="i7">
+				<Freq Unite="GHz">3.4</Freq>
+				<Cache Niveau="lvl1">
+					<Capacite Unite="Ko">512</Capacite>
+				</Cache>
+				<NbCore>4</NbCore>
+				<Arch Nom="x64" />
+			</CPU>
+			<CM>
+				<Chipset />
+				<Socket>Socket</Socket>
+			</CM>
+			<RAM>
+				<Freq Unite="GHz">Freq</Freq>
+				<Capacite Unite="Ko">Capacite</Capacite>
+				<TYPE>TYPE</TYPE>
+			</RAM>
+			<GPU Nom="NVIDIA GeForce GT 640">
+				<Freq Unite="GHz">Freq</Freq>
+				<Connectique Nom="USB" />
+			</GPU>
+			<BIOS Nom="BiosA" Version="1.1" />
+		</Config>
+		<Softwares>
+			<OS Nom="Windows 7 Professionnel">
+				<Arch Nom="x64" />
+			</OS>
+			<Software Nom="Office" Version="2010">
+				<Arch Nom="x64" />
+			</Software>
+		</Softwares>
+	</PC>
+
+
+
+	<PC id="id87577">
+		<Id>
+			<Nom>Nom du PC2</Nom>
+			<Modele Nom="DELL XPS2" />
+		</Id>
+		<Config>
+			<Stockages>
+				<Stockage Nom="Disque Dur C2:">
+					<Support Nom="SSD" />
+					<Connectique Nom="FIREWIRE" />
+					<Capacite Unite="To">1</Capacite>
+				</Stockage>
+				<Stockage Nom="Disque Dur C3:">
+					<Support Nom="SSD" />
+					<Connectique Nom="FIREWIRE" />
+					<Capacite Unite="To">1</Capacite>
+				</Stockage>
+			</Stockages>
+			<Interfaces>
+				<Interface Nom="Carte Wifi2">
+					<TYPE>WIFI2</TYPE>
+					<Adresse>
+						<MAC>00:00:00:00:00:00</MAC>
+						<IPV4>192.168.1.14</IPV4>
+						<SUBNET>192.168.1.0</SUBNET>
+						<GATEWAY>192.168.1.1</GATEWAY>
+					</Adresse>
+				</Interface>
+				<Interface Nom="Carte Ethernet2">
+					<TYPE>Ethernet2</TYPE>
+					<Adresse>
+						<MAC>00:00:00:00:00:01</MAC>
+						<IPV4>192.168.1.15</IPV4>
+						<SUBNET>192.168.1.0</SUBNET>
+						<GATEWAY>192.168.1.1</GATEWAY>
+					</Adresse>
+				</Interface>
+			</Interfaces>
+			<Peripheriques>
+				<Peripherique Nom="Ecran2">
+					<Connectique Nom="HDMI" />
+					<TYPE>21pouces</TYPE>
+				</Peripherique>
+				<Peripherique Nom="Ecran3">
+					<Connectique Nom="HDMI" />
+					<TYPE>21pouces</TYPE>
+				</Peripherique>
+			</Peripheriques>
+			<CPU Nom="i7">
+				<Freq Unite="GHz">3.5</Freq>
+				<Cache Niveau="lvl1">
+					<Capacite Unite="Ko">256</Capacite>
+				</Cache>
+				<NbCore>4</NbCore>
+				<Arch Nom="x64" />
+			</CPU>
+			<CM>
+				<Chipset />
+				<Socket>Socket2</Socket>
+			</CM>
+			<RAM>
+				<Freq Unite="GHz">Freq2</Freq>
+				<Capacite Unite="Ko">Capacite2</Capacite>
+				<TYPE>TYPE2</TYPE>
+			</RAM>
+			<GPU Nom="NVIDIA GeForce GT 640">
+				<Freq Unite="GHz">2</Freq>
+				<Connectique Nom="USB" />
+			</GPU>
+			<BIOS Nom="BiosX" Version="1.2" />
+		</Config>
+		<Softwares>
+			<OS Nom="Windows 8 Caca">
+				<Arch Nom="IA_64" />
+			</OS>
+			<Software Nom="Office" Version="2012">
+				<Arch Nom="IA_64" />
+			</Software>
+			<Software Nom="Office" Version="2010">
+				<Arch Nom="IA_64" />
+			</Software>
+			<Software Nom="Office" Version="2007">
+				<Arch Nom="IA_64" />
+			</Software>
+			<Software Nom="Office" Version="2003">
+				<Arch Nom="IA_64" />
+			</Software>
+			<Software Nom="Office" Version="2000">
+				<Arch Nom="IA_64" />
+			</Software>
+			<Software Nom="Office" Version="1999">
+				<Arch Nom="IA_64" />
+			</Software>
+		</Softwares>
+	</PC>
+	<PC id="id290">
+		<Id>
+			<Nom>Nom du PC2</Nom>
+			<Modele Nom="DELL XPS2" />
+		</Id>
+		<Config>
+			<Stockages>
+				<Stockage Nom="Disque Dur C2:">
+					<Support Nom="SSD" />
+					<Connectique Nom="FIREWIRE" />
+					<Capacite Unite="To">1</Capacite>
+				</Stockage>
+				<Stockage Nom="Disque Dur C3:">
+					<Support Nom="SSD" />
+					<Connectique Nom="FIREWIRE" />
+					<Capacite Unite="To">1</Capacite>
+				</Stockage>
+			</Stockages>
+			<Interfaces>
+				<Interface Nom="Carte Wifi2">
+					<TYPE>WIFI2</TYPE>
+					<Adresse>
+						<MAC>00:00:00:00:00:00</MAC>
+						<IPV4>192.168.1.14</IPV4>
+						<SUBNET>192.168.1.0</SUBNET>
+						<GATEWAY>192.168.1.1</GATEWAY>
+					</Adresse>
+				</Interface>
+				<Interface Nom="Carte Ethernet2">
+					<TYPE>Ethernet2</TYPE>
+					<Adresse>
+						<MAC>00:00:00:00:00:01</MAC>
+						<IPV4>192.168.1.15</IPV4>
+						<SUBNET>192.168.1.0</SUBNET>
+						<GATEWAY>192.168.1.1</GATEWAY>
+					</Adresse>
+				</Interface>
+			</Interfaces>
+			<Peripheriques>
+				<Peripherique Nom="Ecran2">
+					<Connectique Nom="HDMI" />
+					<TYPE>21pouces</TYPE>
+				</Peripherique>
+				<Peripherique Nom="Ecran3">
+					<Connectique Nom="HDMI" />
+					<TYPE>21pouces</TYPE>
+				</Peripherique>
+			</Peripheriques>
+			<CPU Nom="i7">
+				<Freq Unite="GHz">3.5</Freq>
+				<Cache Niveau="lvl1">
+					<Capacite Unite="Ko">256</Capacite>
+				</Cache>
+				<NbCore>4</NbCore>
+				<Arch Nom="x64" />
+			</CPU>
+			<CM>
+				<Chipset />
+				<Socket>Socket2</Socket>
+			</CM>
+			<RAM>
+				<Freq Unite="GHz">Freq2</Freq>
+				<Capacite Unite="Ko">Capacite2</Capacite>
+				<TYPE>TYPE2</TYPE>
+			</RAM>
+			<GPU Nom="NVIDIA GeForce GT 640">
+				<Freq Unite="GHz">2</Freq>
+				<Connectique Nom="USB" />
+			</GPU>
+			<BIOS Nom="BiosX" Version="1.2" />
+		</Config>
+		<Softwares>
+			<OS Nom="Windows 8 Caca">
+				<Arch Nom="IA_64" />
+			</OS>
+			<Software Nom="Office" Version="2012">
+				<Arch Nom="IA_64" />
+			</Software>
+			<Software Nom="Office" Version="2010">
+				<Arch Nom="IA_64" />
+			</Software>
+			<Software Nom="Office" Version="2007">
+				<Arch Nom="IA_64" />
+			</Software>
+			<Software Nom="Office" Version="2003">
+				<Arch Nom="IA_64" />
+			</Software>
+			<Software Nom="Office" Version="2000">
+				<Arch Nom="IA_64" />
+			</Software>
+			<Software Nom="Office" Version="1999">
+				<Arch Nom="IA_64" />
+			</Software>
+		</Softwares>
+	</PC>
+	<PC id="id158">
+		<Id>
+			<Nom>Nom du PC2</Nom>
+			<Modele Nom="DELL XPS2" />
+		</Id>
+		<Config>
+			<Stockages>
+				<Stockage Nom="Disque Dur C2:">
+					<Support Nom="SSD" />
+					<Connectique Nom="FIREWIRE" />
+					<Capacite Unite="To">1</Capacite>
+				</Stockage>
+				<Stockage Nom="Disque Dur C3:">
+					<Support Nom="SSD" />
+					<Connectique Nom="FIREWIRE" />
+					<Capacite Unite="To">1</Capacite>
+				</Stockage>
+			</Stockages>
+			<Interfaces>
+				<Interface Nom="Carte Wifi2">
+					<TYPE>WIFI2</TYPE>
+					<Adresse>
+						<MAC>00:00:00:00:00:00</MAC>
+						<IPV4>192.168.1.14</IPV4>
+						<SUBNET>192.168.1.0</SUBNET>
+						<GATEWAY>192.168.1.1</GATEWAY>
+					</Adresse>
+				</Interface>
+				<Interface Nom="Carte Ethernet2">
+					<TYPE>Ethernet2</TYPE>
+					<Adresse>
+						<MAC>00:00:00:00:00:01</MAC>
+						<IPV4>192.168.1.15</IPV4>
+						<SUBNET>192.168.1.0</SUBNET>
+						<GATEWAY>192.168.1.1</GATEWAY>
+					</Adresse>
+				</Interface>
+			</Interfaces>
+			<Peripheriques>
+				<Peripherique Nom="Ecran2">
+					<Connectique Nom="HDMI" />
+					<TYPE>21pouces</TYPE>
+				</Peripherique>
+				<Peripherique Nom="Ecran3">
+					<Connectique Nom="HDMI" />
+					<TYPE>21pouces</TYPE>
+				</Peripherique>
+			</Peripheriques>
+			<CPU Nom="i7">
+				<Freq Unite="GHz">3.5</Freq>
+				<Cache Niveau="lvl1">
+					<Capacite Unite="Ko">256</Capacite>
+				</Cache>
+				<NbCore>4</NbCore>
+				<Arch Nom="x64" />
+			</CPU>
+			<CM>
+				<Chipset />
+				<Socket>Socket2</Socket>
+			</CM>
+			<RAM>
+				<Freq Unite="GHz">Freq2</Freq>
+				<Capacite Unite="Ko">Capacite2</Capacite>
+				<TYPE>TYPE2</TYPE>
+			</RAM>
+			<GPU Nom="NVIDIA GeForce GT 640">
+				<Freq Unite="GHz">2</Freq>
+				<Connectique Nom="USB" />
+			</GPU>
+			<BIOS Nom="BiosX" Version="1.2" />
+		</Config>
+		<Softwares>
+			<OS Nom="Windows 8 Caca">
+				<Arch Nom="IA_64" />
+			</OS>
+			<Software Nom="Office" Version="2012">
+				<Arch Nom="IA_64" />
+			</Software>
+			<Software Nom="Office" Version="2010">
+				<Arch Nom="IA_64" />
+			</Software>
+			<Software Nom="Office" Version="2007">
+				<Arch Nom="IA_64" />
+			</Software>
+			<Software Nom="Office" Version="2003">
+				<Arch Nom="IA_64" />
+			</Software>
+			<Software Nom="Office" Version="2000">
+				<Arch Nom="IA_64" />
+			</Software>
+			<Software Nom="Office" Version="1999">
+				<Arch Nom="IA_64" />
+			</Software>
+		</Softwares>
+	</PC>
+	<PC id="id609">
+		<Id>
+			<Nom>Nom du PC2</Nom>
+			<Modele Nom="DELL XPS2" />
+		</Id>
+		<Config>
+			<Stockages>
+				<Stockage Nom="Disque Dur C2:">
+					<Support Nom="SSD" />
+					<Connectique Nom="FIREWIRE" />
+					<Capacite Unite="To">1</Capacite>
+				</Stockage>
+				<Stockage Nom="Disque Dur C3:">
+					<Support Nom="SSD" />
+					<Connectique Nom="FIREWIRE" />
+					<Capacite Unite="To">1</Capacite>
+				</Stockage>
+			</Stockages>
+			<Interfaces>
+				<Interface Nom="Carte Wifi2">
+					<TYPE>WIFI2</TYPE>
+					<Adresse>
+						<MAC>00:00:00:00:00:00</MAC>
+						<IPV4>192.168.1.14</IPV4>
+						<SUBNET>192.168.1.0</SUBNET>
+						<GATEWAY>192.168.1.1</GATEWAY>
+					</Adresse>
+				</Interface>
+				<Interface Nom="Carte Ethernet2">
+					<TYPE>Ethernet2</TYPE>
+					<Adresse>
+						<MAC>00:00:00:00:00:01</MAC>
+						<IPV4>192.168.1.15</IPV4>
+						<SUBNET>192.168.1.0</SUBNET>
+						<GATEWAY>192.168.1.1</GATEWAY>
+					</Adresse>
+				</Interface>
+			</Interfaces>
+			<Peripheriques>
+				<Peripherique Nom="Ecran2">
+					<Connectique Nom="HDMI" />
+					<TYPE>21pouces</TYPE>
+				</Peripherique>
+				<Peripherique Nom="Ecran3">
+					<Connectique Nom="HDMI" />
+					<TYPE>21pouces</TYPE>
+				</Peripherique>
+			</Peripheriques>
+			<CPU Nom="i7">
+				<Freq Unite="GHz">3.5</Freq>
+				<Cache Niveau="lvl1">
+					<Capacite Unite="Ko">256</Capacite>
+				</Cache>
+				<NbCore>4</NbCore>
+				<Arch Nom="x64" />
+			</CPU>
+			<CM>
+				<Chipset />
+				<Socket>Socket2</Socket>
+			</CM>
+			<RAM>
+				<Freq Unite="GHz">Freq2</Freq>
+				<Capacite Unite="Ko">Capacite2</Capacite>
+				<TYPE>TYPE2</TYPE>
+			</RAM>
+			<GPU Nom="NVIDIA GeForce GT 640">
+				<Freq Unite="GHz">2</Freq>
+				<Connectique Nom="USB" />
+			</GPU>
+			<BIOS Nom="BiosX" Version="1.2" />
+		</Config>
+		<Softwares>
+			<OS Nom="Windows 8">
+				<Arch Nom="IA_64" />
+			</OS>
+			<Software Nom="Office" Version="2012">
+				<Arch Nom="IA_64" />
+			</Software>
+			<Software Nom="Office" Version="2010">
+				<Arch Nom="IA_64" />
+			</Software>
+			<Software Nom="Office" Version="2007">
+				<Arch Nom="IA_64" />
+			</Software>
+			<Software Nom="Office" Version="2003">
+				<Arch Nom="IA_64" />
+			</Software>
+			<Software Nom="Office" Version="2000">
+				<Arch Nom="IA_64" />
+			</Software>
+			<Software Nom="Office" Version="1999">
+				<Arch Nom="IA_64" />
+			</Software>
+		</Softwares>
+	</PC>
 	<PC id="patate">
 		<Id>
 			<Nom>PC Patate</Nom>

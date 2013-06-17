@@ -114,9 +114,6 @@ foreach ($flotte1 as $i => $buf){
 
 							}
 							echo "</ul>";
-
-
-
 							//}
 							?>
 			</p>
@@ -317,8 +314,7 @@ foreach ($flotte1 as $i => $buf){
 		</article>
 	</div>
 	<footer id="pdp">
-		Site r&eacute;aliser par <a href="mailto:johannystrugala@free.fr">Jojo
-			lapatate &#169;</a>
+		Site r&eacute;aliser par <a href="mailto:johannystrugala@free.fr">Johanny Strugala / Cedric Ergenschaeffter &#169;</a>
 	</footer>
 </body>
 </html>

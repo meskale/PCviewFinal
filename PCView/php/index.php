@@ -14,7 +14,7 @@ $pcs = $flotte->getFlotte();
 
 
 
-$nbpc = count($flotte);
+$nbpc = count($pcs);
 
 
 //Filtrage de pc
@@ -88,9 +88,10 @@ $nbpg = ceil($nbpc/$nbpcpp); //nombre de page
 					echo "</strong></a></li>";
 					}
 					*/
-
-					foreach($pcs as $i => $pc)
-					{
+					
+					
+					for($i=$startIndex; $i< $endIndex ;$i++){
+						$pc = (object)$pcs[$i];
 						echo "<li><a href='consultPc.php?id=";
 						echo $pc->getName()."'><strong>";
 						echo $pc->getName();
@@ -101,7 +102,7 @@ $nbpg = ceil($nbpc/$nbpcpp); //nombre de page
 ?>
 				</ul>
 			</nav>
-	<!--  
+	 
 			<footer>
 				<ul>
 					<?php 
@@ -127,12 +128,11 @@ $nbpg = ceil($nbpc/$nbpcpp); //nombre de page
 				</form>
 
 			</footer>
-		-->
+		
 		</article>
 	</div>
 	<footer id="pdp">
-		Site r&eacute;aliser par <a href="mailto:johannystrugala@free.fr">Jojo
-			lapatate &#169;</a>
+		Site r&eacute;aliser par <a href="mailto:johannystrugala@free.fr">Johanny Strugala /Cedric Ergenschaeffter &#169;</a>
 	</footer>
 </body>
 </html>
