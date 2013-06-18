@@ -298,10 +298,8 @@ foreach ($flotte1 as $i => $buf){
 		echo "<td>".$pe->getElementsByTagName("TYPE")->item(0)->nodeValue."</td>";
 		echo "</tr>";
 }
-*/
-					
-					$buf = $pc->getPeripheriques();
-			
+*/				
+					$buf = $pc->getPeripheriques();		
 					for($i=0;$i<count($buf);$i++){
 						echo "<tr><td>".$buf[$i]['Nom']."</td>";
 						echo "<td>".$buf[$i]['Connectique']."</td>" ;
@@ -331,8 +329,7 @@ foreach ($flotte1 as $i => $buf){
 		echo "<td>".$pe->getElementsByTagName("TYPE")->item(0)->nodeValue."</td>";
 		echo "</tr>";
 }
-*/
-					
+*/	
 					$buf = $pc->getSoftwares();
 			
 					for($i=0;$i<count($buf);$i++){

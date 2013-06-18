@@ -4,7 +4,7 @@
 <PC id="id0">
 		<Id>
 			<Nom>Nom du PC1</Nom>
-			<Modele Nom="DELL XPS" />
+			<Modele >DELL XPS2" </Modele>
 		</Id>
 		<Config>
 			<Stockages>
@@ -78,7 +78,7 @@
 	<PC id="id87577">
 		<Id>
 			<Nom>Nom du PC2</Nom>
-			<Modele Nom="DELL XPS2" />
+			<Modele >DELL XPS2" </Modele>
 		</Id>
 		<Config>
 			<Stockages>
@@ -173,7 +173,7 @@
 	<PC id="id290">
 		<Id>
 			<Nom>Nom du PC2</Nom>
-			<Modele Nom="DELL XPS2" />
+			<Modele >DELL XPS2" </Modele>
 		</Id>
 		<Config>
 			<Stockages>
@@ -268,7 +268,7 @@
 	<PC id="id158">
 		<Id>
 			<Nom>Nom du PC2</Nom>
-			<Modele Nom="DELL XPS2" />
+			<Modele >DELL XPS2" </Modele>
 		</Id>
 		<Config>
 			<Stockages>
@@ -363,7 +363,7 @@
 	<PC id="id609">
 		<Id>
 			<Nom>Nom du PC2</Nom>
-			<Modele Nom="DELL XPS2" />
+			<Modele >DELL XPS2" </Modele>
 		</Id>
 		<Config>
 			<Stockages>

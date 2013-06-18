@@ -6,17 +6,29 @@ session_start();
 //$pcs = $flotte->getPcList($_SESSION["filtre"]);
 //$nbpc =$pcs->length;
 
-
+//declaration / instanciation / initialisation
 require_once './class/FlotteParser.class.php';
 $flotte = new FlotteParser();
 $flotte= $flotte->parse();
 $pcs = $flotte->getFlotte();
 
-$nbpc = count($pcs);
 
-//Filtrage de pc
+//Mise en place de filtre a l'affichage
 if(isset($_POST['filtre']))
 	$_SESSION['filtre']=$_POST['filtre'];
+
+if(isset($_POST['typeFiltre']))
+	$_SESSION['typeFiltre']=$_POST['TypeFiltre'];
+/*
+if(isset($_SESSION['filtre']))
+{
+	$pcs=$flotte->getFilteredPC($_SESSION['filtre']);
+	
+}
+*/
+
+
+$nbpc = count($pcs);
 
 //On veut quel page
 if(isset($_GET["page"]))
@@ -55,12 +67,18 @@ $nbpg = ceil($nbpc/$nbpcpp); //nombre de page
 			alt="logo en forme de pc" />
 		<header class="header">
 			<h2>Bienvenue sur l'interface de consultation des PCs</h2>
-			<!--  <form id='formFiltre' action="index.php" method="post">
+			  <form id='formFiltre' action="index.php" method="post">
 				<label for="filtre">Recherche :</label><input type="text"
 					id="filtre" name="filtre" size="20"
-					value="<?php echo $_SESSION['filtre'];?>" /> <input type="submit"
-					value="chercher " />
-					-->
+					value="<?php echo $_SESSION['filtre'];?>" />
+					<label for="typeFiltre">Que rechercher ?</label>
+					<select id="typeFiltre" name="typeFiltre" >
+						<option value="OS" >systeme d'exploitation</option>
+						<option value="Nom" >nom du pc</option>
+						<option value="IPv4" >adresse ip</option>
+						<option value="X" >Total</option>
+					</select>
+					 <input type="submit"	value="chercher " />
 			</form>
 		</header>
 	</div>

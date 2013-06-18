@@ -30,6 +30,8 @@ class PC {
 	}
 
 
+	// SETTER
+	
 	public function setName($var_name) {
 		$this->name = $var_name;
 	}
@@ -78,6 +80,8 @@ class PC {
 		$this->os = $var_os;
 	}
 	
+	// GETTER
+	
 	public function getName() {
 		return $this->name;
 	}
@@ -98,35 +102,68 @@ class PC {
 		return $this->gpu;
 	}
 
+	// Return
 	public function getCM() {
 		return $this->cm;
 	}
 
+	// Renvoie un tableau contenant les infos de la ram
 	public function getRAM() {
 		return $this->ram;
 	}
 
+	// Return une liste de tableau de stockage ( voir Parser )
 	public function getStockages() {
 		return $this->stockages;
 	}
 
+	// Return une liste de tableau d'interface ( voir Parser )
 	public function getInterfaces() {
 		return $this->interfaces;
 	}
 
+	// Return une liste de tableau de peripherique ( voir Parser )
 	public function getPeripheriques() {
 		return $this->peripheriques;
 	}
-
+	
+	// Return une liste de tableau d'interface ( voir Parser )
+	public function getPeripheriques() {
+		return $this->peripheriques;
 	public function getSoftwares() {
 		return $this->softwares;
 	}
 
+	// Return un tableau contenant les infos de l'OS de la machine
 	public function getOS() {
 		return $this->os;
 	}
-
-
+	
+	// Return un tableau contenant les informations utiles à la recherche
+	public function getFieldList() {
+		// On remonte les champs utils à la recherche générale
+		// Si le mot recherché est contenu dans l'un de ses attributs $list[] = $pc;
+		$field[] = $this->name;
+		$field[] = $this->modele;
+		$field[] = $this->bios;
+		$field[] = $this->cpu;
+		$field[] = $this->gpu;
+		$field[] = $this->cm;
+		$field[] = $this->ram;
+		$field[] = $this->OS;
+		foreach ($this->interfaces as $int) {
+			$field[] = $int["IPV4"];			
+		}
+		foreach ($this->peripheriques as $perif) {
+			$field[] = $perif["Nom"];			
+		}
+		foreach ($this->sofwares as $soft) {
+			$field[] = $soft["Nom"] + " " + $soft["Version"];
+		}
+		
+		return $field;
+	}
+	
 }
 
 ?>
