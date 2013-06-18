@@ -311,6 +311,39 @@ foreach ($flotte1 as $i => $buf){
 ?>
 				</tbody>
 			</table>
+			<table class="tab">
+				<thead>
+					<tr>
+						<th id='softwares' colspan="3" scope="col">Softwares</th>
+					</tr>
+					<tr>
+						<th scope="col">Nom</th>
+						<th scope="col">Version</th>
+						<th scope="col">Arch</th>
+					</tr>
+				</thead>
+				<tbody>
+					<?php
+/*
+					foreach($peripheriques as $pe){
+		echo "<tr><td>".$pe->getAttribute("Nom")."</td>";
+		echo "<td>".$pe->getElementsByTagName("Connectique")->item(0)->getAttribute("Nom")."</td>" ;
+		echo "<td>".$pe->getElementsByTagName("TYPE")->item(0)->nodeValue."</td>";
+		echo "</tr>";
+}
+*/
+					
+					$buf = $pc->getSoftwares();
+			
+					for($i=0;$i<count($buf);$i++){
+						echo "<tr><td>".$buf[$i]['Nom']."</td>";
+						echo "<td>".$buf[$i]['Version']."</td>" ;
+						echo "<td>".$buf[$i]['Arch']."</td>";
+						echo "</tr>";
+					}
+?>
+				</tbody>
+			</table>
 		</article>
 	</div>
 	<footer id="pdp">

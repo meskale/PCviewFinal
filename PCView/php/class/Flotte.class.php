@@ -69,8 +69,7 @@ class Flotte {
 
 				}
 				echo "</ul><br /></li>" ;
-					
-					
+								
 				echo "<li><h2>Périphériques : </h2>";
 
 				echo "<ul class=\"peripheriques\">" ;
