@@ -84,11 +84,8 @@ foreach ($flotte1 as $i => $buf){
 		<article id="hardware">
 			<header class="subheader">Mat&eacute;riel </header>
 
-
-			<p>
 				<strong>CPU : </strong>
-
-
+				<ul>
 				<?php
 				/* DOM
 				 $flotte->displayByName($pc->getName());
@@ -105,19 +102,15 @@ foreach ($flotte1 as $i => $buf){
 				echo $cache->getAttribute("Niveau")." : ";
 				echo $cache->getElementsByTagName("Capacite")->item(0)->nodeValue." ";
 				echo $cache->getElementsByTagName("Capacite")->item(0)->getAttribute("Unite")." ";
-				*/
-					
-				echo "<ul>";
+				}*/
 				foreach($pc->getCPU() as $key => $cpuParam) {
 
 								echo "<li>" . $key . " : " . $cpuParam . "</li>";
 
-							}
-							echo "</ul>";
-							//}
+					}
 							?>
-			</p>
-			<p>
+			</ul>
+
 				<strong>RAM : </strong>
 				<?php
 				/*
@@ -138,8 +131,7 @@ foreach ($flotte1 as $i => $buf){
 
 							?>
 
-			</p>
-			<p>
+
 				<strong>Carte m&egrave;re : </strong>
 
 				<?php 
@@ -158,8 +150,7 @@ foreach ($flotte1 as $i => $buf){
 							}
 							echo "</ul>";
 							?>
-			</p>
-			<p>
+
 				<strong>Carte graphique : </strong>
 
 				<?php 
@@ -190,9 +181,9 @@ foreach ($flotte1 as $i => $buf){
 							echo "</ul>";
 
 							?>
-			</p>
-			<p>
+
 				<strong>BIOS : </strong>
+				<ul>
 				<?php 
 				/*
 				 $bios = $bios->item(0);
@@ -203,13 +194,13 @@ foreach ($flotte1 as $i => $buf){
 				echo $bios->getAttribute("Nom");
 				*/
 				$buf=$pc->getBIOS();
-				echo "<ul>" ;
+
 				foreach($buf as $key => $biosParam) {
 					echo "<li>" . $key . " : " . $biosParam . "</li>";
 				}
-				echo "</ul>";
+	
 				?>
-			</p>
+	</ul>
 
 		</article>
 		<article id="config">

@@ -1,16 +1,16 @@
 <?php
-session_start();
+//session_start();
 
-//require_once 'FlotteParser.class.php';
+//require_once 'FlotteParserOld.class.php';
 //$flotte = new FlotteParser("Flotte.xml");
 //$pcs = $flotte->getPcList($_SESSION["filtre"]);
 //$nbpc =$pcs->length;
 
 //declaration / instanciation / initialisation
-require_once './class/FlotteParser.class.php';
+require 'class/FlotteParser.class.php';
 $flotte = new FlotteParser();
 $flotte= $flotte->parse();
-$pcs = $flotte->getFlotte();
+
 
 
 //Mise en place de filtre a l'affichage
@@ -18,14 +18,16 @@ if(isset($_POST['filtre']))
 	$_SESSION['filtre']=$_POST['filtre'];
 
 if(isset($_POST['typeFiltre']))
-	$_SESSION['typeFiltre']=$_POST['TypeFiltre'];
-/*
-if(isset($_SESSION['filtre']))
+	$_SESSION['typeFiltre']=$_POST['typeFiltre'];
+
+if(isset($_SESSION['filtre']) && $_SESSION['filtre']!=null)
 {
-	$pcs=$flotte->getFilteredPC($_SESSION['filtre']);
+	$pcs=$flotte->getFilteredPC($_SESSION['filtre'],$_SESSION['typeFiltre']);
 	
+}else 
+{
+	$pcs = $flotte->getFlotte();
 }
-*/
 
 
 $nbpc = count($pcs);
@@ -74,7 +76,7 @@ $nbpg = ceil($nbpc/$nbpcpp); //nombre de page
 					<label for="typeFiltre">Que rechercher ?</label>
 					<select id="typeFiltre" name="typeFiltre" >
 						<option value="OS" >systeme d'exploitation</option>
-						<option value="Nom" >nom du pc</option>
+						<option value="Nom" selected="selected" >nom du pc</option>
 						<option value="IPv4" >adresse ip</option>
 						<option value="X" >Total</option>
 					</select>
@@ -106,7 +108,7 @@ $nbpg = ceil($nbpc/$nbpcpp); //nombre de page
 					for($i=$startIndex; $i< $endIndex ;$i++){
 						$pc = (object)$pcs[$i];
 						echo "<li><a href='consultPc.php?id=";
-						echo $pc->getName()."'><strong>";
+						echo urlencode($pc->getName())."'><strong>";
 						echo $pc->getName();
 						echo "</strong></a></li>";
 					}

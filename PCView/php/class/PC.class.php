@@ -126,10 +126,7 @@ class PC {
 	public function getPeripheriques() {
 		return $this->peripheriques;
 	}
-	
-	// Return une liste de tableau d'interface ( voir Parser )
-	public function getPeripheriques() {
-		return $this->peripheriques;
+
 	public function getSoftwares() {
 		return $this->softwares;
 	}
@@ -151,8 +148,8 @@ class PC {
 		$field[] = $this->cm;
 		$field[] = $this->ram;
 		$field[] = $this->OS;
-		foreach ($this->interfaces as $int) {
-			$field[] = $int["IPV4"];			
+		foreach ($this->interfaces as $inte) {
+			$field[] = $inte["IPV4"];			
 		}
 		foreach ($this->peripheriques as $perif) {
 			$field[] = $perif["Nom"];			

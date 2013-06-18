@@ -1,7 +1,7 @@
 <?php
 
-require('class/Flotte.class.php');
-require('class/PC.class.php');
+require('Flotte.class.php');
+require('PC.class.php');
 
 /**
  *	@desc
